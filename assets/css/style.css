@@ -256,3 +256,55 @@ ul.funding-links li a[href="#"] {
 section.funding article span svg {
   margin-right: 0.5em;
 }
+
+footer {
+  color: #fff;
+}
+
+footer#main-footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  font-size: 0.7rem;
+  background: #000;
+  min-height: 9em;
+  padding: 3em 0;
+}
+
+footer#main-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer div:first-child ul:first-child li {
+  margin: 0 0.2em;
+  background: #333;
+  border-radius: 180%;
+  width: 2em;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+footer div:first-child > ul:last-child {
+  padding: 1em 0;
+  font-size: 0.8rem;
+}
+
+footer div:first-child ul:last-child li {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+footer#main-footer li {
+  margin: 0 0.5em;
+}
+
+footer#main-footer > div:first-child {
+  background: #131313;
+}
+
+footer div:last-child b {
+  color: #f42;
+}
