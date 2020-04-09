@@ -11,6 +11,14 @@ li {
   float: left;
 }
 
+section > h2 {
+  color: #f42;
+}
+
+section > h2:hover {
+  color: #000;
+}
+
 article a {
   text-decoration: none;
   color: #fff;
@@ -89,6 +97,7 @@ section.sticky-nav div a {
   width: 100%;
   opacity: 0.3;
   object-fit: cover;
+  max-height: 100%;
 }
 
 .popular article ul {
@@ -107,14 +116,14 @@ section.sticky-nav div a {
 .popular article header {
   font-size: 0.9rem;
   z-index: 999;
+  position: absolute;
+  bottom: 0;
+  padding: 0.5em;
 }
 
 .popular article h2 {
   font-size: 1.2rem;
   font-weight: 700;
-  position: absolute;
-  bottom: 0;
-  padding: 0.5em;
 }
 
 /* news section styling */
@@ -165,4 +174,52 @@ section.news ul li:first-child {
 
 section.news ul li:last-child {
   list-style-type: disc;
+}
+
+/* Latest Funding Styling */
+
+.funding {
+  margin: 1.5em 1em;
+}
+
+section.funding h2 {
+  min-width: 100%;
+}
+
+.funding-links {
+  display: flex;
+  flex-direction: column;
+  margin: 0.8em 0;
+  line-height: 1.8em;
+}
+
+section.funding-links li a[href="#"] {
+  text-decoration: none;
+  color: #f42;
+}
+
+.funding-links li a:hover {
+  color: #000;
+}
+
+.funding article h4 {
+  padding: 0.6em 5.5em;
+  background: #f42;
+  color: white;
+}
+
+.funding article img {
+  width: 60px;
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+}
+
+.funding-info {
+  padding: 0.6em 5.5em;
+  background: #ffebe7;
+}
+
+.funding-info span {
+  color: #cfbebb;
 }
