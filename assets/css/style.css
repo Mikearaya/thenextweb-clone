@@ -5,3 +5,16 @@ body {
 section {
   background-color: #fe7;
 }
+
+.sticky-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sticky-nav img {
+  width: 50%;
+}
+
+.sticky-nav div {
+  display: flex;
+}
