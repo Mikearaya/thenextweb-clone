@@ -35,9 +35,13 @@ article {
   position: relative;
 }
 
+section:not(.popular) {
+  margin: 1.5em 1em;
+}
+
 /* Start Nav-Bar styling */
 
-section.sticky-nav {
+div.sticky-nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -47,7 +51,7 @@ section.sticky-nav {
   color: #bebebe;
 }
 
-section.sticky-nav img {
+div.sticky-nav img {
   width: 20%;
 }
 
@@ -56,7 +60,7 @@ section.sticky-nav img {
   align-items: center;
 }
 
-section.sticky-nav div a {
+div.sticky-nav div a {
   color: #bebebe;
   padding: 0.5em;
   border-left: 1px solid #ebebeb;
@@ -136,7 +140,6 @@ section.sticky-nav div a {
 
 section.news {
   display: grid;
-  margin: 1.5em 1em;
   grid-gap: 0.5em;
 }
 
@@ -183,10 +186,6 @@ section.news ul li:last-child {
 }
 
 /* Latest Funding Styling */
-
-section.funding {
-  margin: 1.5em 1em;
-}
 
 section.funding > article {
   margin: 0.5em 0;
