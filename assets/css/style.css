@@ -13,6 +13,12 @@ li {
 
 section > h2 {
   color: #f42;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+hr {
+  border-color: #f42;
 }
 
 section > h2:hover {
@@ -178,8 +184,13 @@ section.news ul li:last-child {
 
 /* Latest Funding Styling */
 
-.funding {
+section.funding {
   margin: 1.5em 1em;
+}
+
+section.funding > article {
+  margin: 0.5em 0;
+  background-color: #fffaf8;
 }
 
 section.funding h2 {
@@ -190,11 +201,12 @@ section.funding h2 {
   display: flex;
   flex-direction: column;
   margin: 0.8em 0;
-  line-height: 1.8em;
+  line-height: 1.5;
 }
 
-section.funding-links li a[href="#"] {
+ul.funding-links li a[href="#"] {
   text-decoration: none;
+  font-size: 0.9rem;
   color: #f42;
 }
 
@@ -222,4 +234,25 @@ section.funding-links li a[href="#"] {
 
 .funding-info span {
   color: #cfbebb;
+  font-size: 0.7rem;
+}
+
+.funding article > span {
+  margin: 1em 0.5em;
+  display: block;
+  font-size: 0.8rem;
+}
+
+.funding article p {
+  margin: 2em 1em;
+  font-size: 0.7rem;
+}
+
+.funding article p > span {
+  color: #aaa;
+  padding-left: 0.3em;
+}
+
+section.funding article span svg {
+  margin-right: 0.5em;
 }
