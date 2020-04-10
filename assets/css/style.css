@@ -516,4 +516,14 @@ li.bold-text {
   .black-links-tag:hover {
     color: white;
   }
+
+  .popular {
+    grid-template-columns: 2fr 1fr;
+    grid-row: 300px;
+    grid-auto-rows: 150px;
+  }
+
+  .popular article:first-of-type {
+    grid-row: 1/3;
+  }
 }
