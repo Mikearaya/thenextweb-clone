@@ -11,17 +11,19 @@ li {
   float: left;
 }
 
-section > h2 {
+section > h2,
+.h2-general {
   color: #f42;
   font-size: 1.5rem;
   line-height: 1.2;
 }
 
 hr {
-  border-color: #f42;
+  border: 1px solid rgba(255, 68, 34, 0.25);
 }
 
-section > h2:hover {
+section > h2:hover,
+.h2-general:hover {
   color: #000;
 }
 
@@ -96,34 +98,34 @@ div.sticky-nav div a {
   margin: 0 0.5em;
 }
 
-.popular article {
+article.image-text-general {
   line-height: 1.2em;
   background: linear-gradient(#fff, #000 50%);
   color: #fff;
   overflow: hidden;
 }
 
-.popular article img {
+article.image-text-general img {
   width: 100%;
   opacity: 0.3;
   object-fit: cover;
   max-height: 100%;
 }
 
-.popular article ul {
+article.image-text-general ul {
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.7rem;
 }
 
-.popular article ul li {
+article.image-text-general ul li {
   padding-right: 0.5em;
 }
 
-.popular article ul li svg {
+article.image-text-general ul li svg {
   padding-right: 0.3em;
 }
 
-.popular article header {
+article.image-text-general header {
   font-size: 0.9rem;
   z-index: 999;
   position: absolute;
@@ -131,7 +133,7 @@ div.sticky-nav div a {
   padding: 0.5em;
 }
 
-.popular article h2 {
+article.image-text-general h2 {
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -237,7 +239,7 @@ ul.funding-links li a[href="#"] {
 }
 
 .funding article > span {
-  margin: 1em 0.5em;
+  margin: 1em 1.5em;
   display: block;
   font-size: 0.8rem;
 }
@@ -255,6 +257,8 @@ ul.funding-links li a[href="#"] {
 section.funding article span svg {
   margin-right: 0.5em;
 }
+
+/* Footer Styling */
 
 footer {
   color: #fff;
@@ -297,7 +301,17 @@ footer div:first-child ul:last-child li {
 }
 
 footer#main-footer li {
-  margin: 0 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  margin: 0.2em;
+}
+
+footer#main-footer ul:last-child li {
+  margin: 0.7em;
 }
 
 footer#main-footer > div:first-child {
@@ -306,4 +320,39 @@ footer#main-footer > div:first-child {
 
 footer div:last-child b {
   color: #f42;
+}
+
+/* Topics Styling Start */
+
+.topics {
+  margin: 0 0.8em;
+}
+
+.latest-topics {
+  display: flex;
+  background: #fff4f2;
+  color: #f42;
+  padding: 0.1em;
+}
+
+div.latest-topics img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  max-height: 100%;
+}
+
+.latest-topics-text {
+  padding: 0.8em;
+  line-height: 1em;
+}
+
+.latest-topics-text span:first-child {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.latest-topics div p {
+  font-size: 0.9rem;
+  font-weight: 700;
 }
