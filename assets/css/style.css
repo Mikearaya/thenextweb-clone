@@ -7,6 +7,10 @@
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
 }
 
+main > section {
+  display: grid;
+}
+
 .link {
   text-decoration: none;
   color: #f42;
@@ -101,7 +105,6 @@ div.sticky-nav img {
 /* Start Popular Articles Styling */
 
 .popular {
-  display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0.5em;
   grid-auto-rows: 150px;
@@ -151,7 +154,6 @@ article.image-text-general h2 {
 /* news section styling */
 
 section.news {
-  display: grid;
   grid-gap: 0.5em;
 }
 
@@ -340,7 +342,6 @@ footer div:last-child b {
 /* Topics Styling Start */
 
 .topics {
-  display: grid;
   margin: 0 0.8em;
 }
 
@@ -420,7 +421,6 @@ section.deals .header {
 /* Deals Section End */
 
 .deals {
-  display: grid;
   grid-gap: 0.5em;
 }
 
