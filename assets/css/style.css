@@ -4,6 +4,8 @@ html {
 
 body {
   position: absolute;
+  line-height: 1.2;
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
 }
 
 .hidden {
@@ -12,7 +14,10 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+main {
+  padding-top: 104px;
 }
 
 main > section {
@@ -65,15 +70,49 @@ section:not(.popular) {
 
 /* Start Nav-Bar styling */
 
+nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.logo-container {
+  position: absolute;
+}
+
+.logo-container > a {
+  background-color: #f42;
+  background-image: linear-gradient(to bottom right, #c09, #f42 85%);
+  display: block;
+  height: 48px;
+  z-index: 2;
+  position: relative;
+  width: 106px;
+  text-align: center;
+}
+
+.right-nav-items a {
+  padding: 0.5em;
+  border-left: 1px solid #ebebeb;
+  font-size: 1.2rem;
+}
+
+.logo-container > a:hover {
+  background-image: url("../images/tenor.gif");
+  background-size: cover;
+}
+
+.logo-container > a > img {
+  width: 66px;
+  transform: translateY(16px);
+}
+
 div.sticky-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   position: sticky;
-  top: 0;
-  background: #fefefe;
-  color: #bebebe;
+  margin-left: 6.1em;
+  height: 48px;
 }
 
 div.sticky-nav img {
@@ -93,12 +132,6 @@ div.sticky-nav img {
   max-width: 15%;
 }
 
-.right-nav-items a {
-  padding: 0.5em;
-  border-left: 1px solid #ebebeb;
-  font-size: 1.2rem;
-}
-
 .right-nav-bars {
   color: #f42;
 }
@@ -111,6 +144,7 @@ div.sticky-nav img {
   text-decoration: none;
   font-size: 0.75rem;
   padding: 2em;
+  display: block;
 }
 
 .festival-link svg {
@@ -135,6 +169,10 @@ div.sticky-nav img {
   color: #b2b2b2;
   font-weight: 500;
   padding-left: 1em;
+}
+
+.nav-link-item a[href="#"]:hover {
+  color: #333;
 }
 
 .black-links {
@@ -206,7 +244,7 @@ section.news h2 {
   padding-bottom: 1em;
 }
 
-.collapsable-article a[href="#"] {
+.collapsable-article > header a:first-of-type {
   font-size: 0.8rem;
   font-weight: 700;
   line-height: 1.3;
@@ -214,7 +252,7 @@ section.news h2 {
   text-decoration: none;
 }
 
-.collapsable-article a[href="#"]:hover {
+.collapsable-article > header a:hover {
   text-decoration: underline;
   color: #f42;
   text-decoration-color: rgba(255, 68, 34, 0.2);
@@ -495,6 +533,18 @@ li.bold-text {
 /* Media queries for tablet */
 
 @media screen and (min-width: 767px) {
+  .logo-container > a {
+    height: 80px;
+  }
+
+  .festival-link {
+    padding: 0.5em;
+  }
+
+  .logo-container > a > img {
+    height: 46px;
+  }
+
   #nav-link {
     display: inline;
   }
@@ -517,6 +567,7 @@ li.bold-text {
     justify-content: space-between;
     background: black;
     padding-left: 0.5em;
+    margin-left: 5.5em;
   }
 
   .black-links-tag {
@@ -539,8 +590,7 @@ li.bold-text {
 
   .popular {
     grid-template-columns: 2fr 1fr;
-    grid-row: minmax(300px, 800px);
-    grid-auto-rows: 300px;
+    grid-auto-rows: 200px;
   }
 
   .popular article:first-of-type {
@@ -625,6 +675,15 @@ li.bold-text {
 }
 
 @media screen and (min-width: 1024px) {
+  div.sticky-nav,
+  .black-links {
+    margin: 0;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
   .left-nav-items img {
     display: none;
   }
