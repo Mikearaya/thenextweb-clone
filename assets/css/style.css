@@ -325,7 +325,12 @@ footer div:last-child b {
 /* Topics Styling Start */
 
 .topics {
+  display: grid;
   margin: 0 0.8em;
+}
+
+.topics h2.h2-general {
+  margin: 1em 0;
 }
 
 .latest-topics {
@@ -352,7 +357,38 @@ div.latest-topics img {
   font-weight: 500;
 }
 
-.latest-topics div p {
+.latest-topics-link {
+  display: block;
+  text-decoration: none;
+  color: #f42;
   font-size: 0.9rem;
   font-weight: 700;
+}
+
+.latest-topics-link:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 68, 34, 0.2);
+}
+
+.topics-list {
+  list-style-type: disc;
+  padding: 0 1em;
+}
+
+.topics-list-item {
+  color: #f42;
+  padding: 0.5em 0;
+  border-bottom: 1px solid #eee;
+}
+
+.topics-list .topics-list-item a[href="#"] {
+  text-decoration: none;
+  color: #555;
+  font-size: 0.8rem;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+.topics-list .topics-list-item a[href="#"]:hover {
+  color: #000;
 }
