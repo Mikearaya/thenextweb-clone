@@ -60,6 +60,7 @@ section:not(.popular) {
 div.sticky-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   position: sticky;
   top: 0;
@@ -76,14 +77,22 @@ div.sticky-nav img {
   align-items: center;
 }
 
-.sticky-nav div a {
+.left-nav-items {
+  max-width: 85%;
+}
+
+.right-nav-items {
+  max-width: 15%;
+}
+
+.right-nav-items a {
   color: #bebebe;
   padding: 0.5em;
   border-left: 1px solid #ebebeb;
   font-size: 1.2rem;
 }
 
-.sticky-nav div a:last-child {
+.right-nav-bars {
   color: #f42;
 }
 
@@ -100,6 +109,29 @@ div.sticky-nav img {
 .festival-link svg {
   padding-left: 0.5em;
   vertical-align: bottom;
+}
+
+#nav-link {
+  display: none;
+}
+
+#nav-link .nav-link-item {
+  font-size: 0.8rem;
+}
+
+.nav-link-item a:hover {
+  color: #333;
+}
+
+.nav-link-item a[href="#"] {
+  text-decoration: none;
+  color: #b2b2b2;
+  font-weight: 500;
+  padding-left: 1em;
+}
+
+.black-links {
+  display: none;
 }
 
 /* Start Popular Articles Styling */
@@ -439,4 +471,49 @@ section.deals .header {
 
 li.bold-text {
   color: #000;
+}
+
+/* Media queries for tablet */
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  #nav-link {
+    display: inline;
+  }
+
+  div.sticky-nav img {
+    width: 106px;
+    object-fit: cover;
+  }
+
+  .nav-link-desktop {
+    display: none;
+  }
+
+  .right-nav-bars {
+    display: none;
+  }
+
+  .black-links {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+  }
+
+  .black-links-tag {
+    text-decoration: none;
+    color: #bebebe;
+    font-size: 0.6em;
+    font-weight: 500;
+    padding: 0.2em 0.5em;
+  }
+
+  .black-links-tag svg {
+    padding-left: 0.2em;
+    vertical-align: bottom;
+    font-size: 1rem;
+  }
+
+  .black-links-tag:hover {
+    color: white;
+  }
 }
