@@ -553,4 +553,29 @@ li.bold-text {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1em;
   }
+
+  .funding {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1em;
+  }
+
+  .funding-links {
+    flex-direction: row;
+    grid-column: 1/-1;
+    margin: 0;
+    padding-top: 0.3em;
+    padding-bottom: 1em;
+  }
+
+  .funding-links li {
+    padding: 0 0.5em;
+  }
+
+  .funding-links li:not(:last-child) {
+    border-right: 1px solid #f42;
+  }
+
+  .funding-links li:first-child {
+    padding-left: 0;
+  }
 }
