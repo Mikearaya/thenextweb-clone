@@ -2,7 +2,7 @@
 
 Clone of [https://thenextweb.com/ signup page](https://http://archive.vn/8p0Im) for our Six Microverse project included in the HTML & CSS course. in this project we have clone the website with all it's responsive features to support mobile, tablet and desktop view. in order to achive responsiveness we have only used CSS media queries with no additional libraries like bootstrap. 
 
-![screenshot](./images/screenshot.png)
+![screenshot](./assets/images/screenshot.png)
 
 ## Built With
 
