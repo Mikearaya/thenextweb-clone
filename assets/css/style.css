@@ -246,7 +246,7 @@ section.funding > article {
   background-color: #fffaf8;
 }
 
-section.funding h2 {
+section.funding div h2 {
   min-width: 100%;
 }
 
@@ -308,6 +308,10 @@ section.funding h2 {
 
 section.funding article span svg {
   margin-right: 0.5em;
+}
+
+.last-article {
+  display: none;
 }
 
 /* Footer Styling */
@@ -561,6 +565,14 @@ li.bold-text {
     grid-column-gap: 1em;
   }
 
+  .last-article {
+    display: none;
+  }
+
+  .funding div {
+    grid-column: 1/-1;
+  }
+
   .funding-links {
     flex-direction: row;
     grid-column: 1/-1;
@@ -598,5 +610,33 @@ li.bold-text {
 
   .topics {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .funding {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-column-gap: 1em;
+  }
+
+  .last-article {
+    display: inline;
+  }
+
+  section.funding div h2 {
+    min-width: 50%;
+  }
+
+  .funding div:first-child {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1/-1;
+  }
+
+  .funding-links li:not(:last-child) {
+    border-right: 1px solid #f42;
+  }
+
+  section:not(.popular) {
+    margin: 1.5em auto;
+    max-width: 1152px;
   }
 }
