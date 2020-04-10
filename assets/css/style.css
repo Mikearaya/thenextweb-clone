@@ -526,4 +526,28 @@ li.bold-text {
   .popular article:first-of-type {
     grid-row: 1/3;
   }
+
+  .news {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .deals {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .news h2:first-of-type,
+  .deals > div:first-of-type {
+    grid-column: 1/-1;
+  }
+
+  .collapsable-article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  article.collapsable-article img {
+    width: 100%;
+    height: 200px;
+    max-height: 300px;
+  }
 }
