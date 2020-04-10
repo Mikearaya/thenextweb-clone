@@ -194,6 +194,8 @@ section.news h2 {
   color: #f42;
   font-weight: 700;
   font-size: 1.5rem;
+  padding-top: 2em;
+  padding-bottom: 1em;
 }
 
 .collapsable-article a[href="#"] {
@@ -476,7 +478,7 @@ li.bold-text {
 
 /* Media queries for tablet */
 
-@media screen and (min-width: 767px) and (max-width: 1023px) {
+@media screen and (min-width: 767px) {
   #nav-link {
     display: inline;
   }
@@ -585,5 +587,16 @@ li.bold-text {
 
   #legal span {
     margin-right: 0.3em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .news,
+  .deals {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .topics {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
