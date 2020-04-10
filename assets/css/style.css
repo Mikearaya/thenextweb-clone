@@ -578,4 +578,12 @@ li.bold-text {
   .funding-links li:first-child {
     padding-left: 0;
   }
+
+  #legal {
+    flex-direction: row !important;
+  }
+
+  #legal span {
+    margin-right: 0.3em;
+  }
 }
