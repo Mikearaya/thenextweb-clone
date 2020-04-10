@@ -7,6 +7,11 @@
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
 }
 
+.link {
+  text-decoration: none;
+  color: #f42;
+}
+
 li {
   float: left;
 }
@@ -151,39 +156,39 @@ section.news h2 {
   font-size: 1.5rem;
 }
 
-section.news p {
+.collapsable-article p {
   font-size: 0.8rem;
   font-weight: 700;
   line-height: 1.3;
 }
 
-section.news article {
+article.collapsable-article {
   display: flex;
 }
 
-section.news img {
+article.collapsable-article img {
   width: 75px;
 }
 
-section.news header {
+article.collapsable-article header {
   padding-left: 0.5em;
 }
 
-section.news ul,
-section.news ul a[href="#"] {
+article.collapsable-article ul,
+article.collapsable-article ul a[href="#"] {
   color: #aaa;
   font-size: 0.7rem;
 }
 
-section.news article a[href="#"] {
+article.collapsable-article article a[href="#"] {
   color: #000;
 }
 
-section.news ul li:first-child {
+.collapsable-article ul li:first-child {
   margin-right: 2em;
 }
 
-section.news ul li:last-child {
+li.list-bullet {
   list-style-type: disc;
 }
 
@@ -390,5 +395,33 @@ div.latest-topics img {
 }
 
 .topics-list .topics-list-item a[href="#"]:hover {
+  color: #000;
+}
+
+/* Deals Section Start */
+
+section.deals .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+
+/* Deals Section End */
+
+.deals-price-list {
+  list-style-type: none;
+  padding-top: 0.5em;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+.deals ul li.strike-through {
+  margin-right: 4px;
+}
+
+li.bold-text {
   color: #000;
 }
