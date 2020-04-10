@@ -10,6 +10,11 @@
 .link {
   text-decoration: none;
   color: #f42;
+  font-size: 0.8rem;
+}
+
+.link:hover {
+  color: #000;
 }
 
 li {
@@ -67,7 +72,7 @@ div.sticky-nav img {
   align-items: center;
 }
 
-div.sticky-nav div a {
+.sticky-nav div a {
   color: #bebebe;
   padding: 0.5em;
   border-left: 1px solid #ebebeb;
@@ -156,10 +161,18 @@ section.news h2 {
   font-size: 1.5rem;
 }
 
-.collapsable-article p {
+.collapsable-article a[href="#"] {
   font-size: 0.8rem;
   font-weight: 700;
   line-height: 1.3;
+  color: #333;
+  text-decoration: none;
+}
+
+.collapsable-article a[href="#"]:hover {
+  text-decoration: underline;
+  color: #f42;
+  text-decoration-color: rgba(255, 68, 34, 0.2);
 }
 
 article.collapsable-article {
@@ -168,20 +181,17 @@ article.collapsable-article {
 
 article.collapsable-article img {
   width: 75px;
+  height: 75px;
+  object-fit: cover;
 }
 
 article.collapsable-article header {
   padding-left: 0.5em;
 }
 
-article.collapsable-article ul,
-article.collapsable-article ul a[href="#"] {
+article.collapsable-article ul {
   color: #aaa;
   font-size: 0.7rem;
-}
-
-article.collapsable-article article a[href="#"] {
-  color: #000;
 }
 
 .collapsable-article ul li:first-child {
@@ -210,13 +220,13 @@ section.funding h2 {
   line-height: 1.5;
 }
 
-ul.funding-links li a[href="#"] {
+.funding .funding-links li a {
   text-decoration: none;
   font-size: 0.9rem;
   color: #f42;
 }
 
-.funding-links li a:hover {
+.funding .funding-links li a:hover {
   color: #000;
 }
 
@@ -403,11 +413,16 @@ div.latest-topics img {
 section.deals .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   padding: 1em 0;
 }
 
 /* Deals Section End */
+
+.deals {
+  display: grid;
+  grid-gap: 0.5em;
+}
 
 .deals-price-list {
   list-style-type: none;
