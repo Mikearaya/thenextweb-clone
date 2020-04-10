@@ -2,6 +2,10 @@ html {
   font-size: 16px;
 }
 
+body {
+  position: absolute;
+}
+
 .hidden {
   display: none;
 }
