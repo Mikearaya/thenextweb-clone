@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 .hidden {
   display: none;
 }
@@ -152,10 +156,9 @@ article.image-text-general {
 
 article.image-text-general img {
   width: 100%;
-  opacity: 0.3;
-  height: 300px;
+  opacity: 0.5;
+  height: 100%;
   object-fit: cover;
-  max-height: 400px;
 }
 
 article.image-text-general ul {
@@ -448,6 +451,10 @@ div.latest-topics img {
   color: #000;
 }
 
+.topics .image-text-general {
+  height: 250px;
+}
+
 /* Deals Section Start */
 
 section.deals .header {
@@ -526,8 +533,8 @@ li.bold-text {
 
   .popular {
     grid-template-columns: 2fr 1fr;
-    grid-row: 300px;
-    grid-auto-rows: 150px;
+    grid-row: minmax(300px, 800px);
+    grid-auto-rows: 300px;
   }
 
   .popular article:first-of-type {
@@ -537,6 +544,15 @@ li.bold-text {
   .news,
   .deals {
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 1.5em;
+  }
+
+  section.news {
+    grid-row-gap: 1.5em;
+  }
+
+  article.collapsable-article header {
+    padding-left: 0;
   }
 
   main section h2:first-of-type,
@@ -606,6 +622,11 @@ li.bold-text {
   .news,
   .deals {
     grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 1.5em;
+  }
+
+  article.collapsable-article header {
+    padding-left: 0;
   }
 
   .topics {
