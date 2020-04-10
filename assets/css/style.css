@@ -90,7 +90,6 @@ div.sticky-nav img {
 }
 
 .right-nav-items a {
-  color: #bebebe;
   padding: 0.5em;
   border-left: 1px solid #ebebeb;
   font-size: 1.2rem;
@@ -136,6 +135,8 @@ div.sticky-nav img {
 
 .black-links {
   display: none;
+  height: 30px;
+  font-size: 1.2rem;
 }
 
 /* Start Popular Articles Styling */
@@ -511,6 +512,7 @@ li.bold-text {
     display: flex;
     justify-content: space-between;
     background: black;
+    padding-left: 0.5em;
   }
 
   .black-links-tag {
@@ -619,6 +621,10 @@ li.bold-text {
 }
 
 @media screen and (min-width: 1024px) {
+  .left-nav-items img {
+    display: none;
+  }
+
   .news,
   .deals {
     grid-template-columns: repeat(4, 1fr);
@@ -659,5 +665,11 @@ li.bold-text {
   section:not(.popular) {
     margin: 1.5em auto;
     max-width: 1152px;
+  }
+}
+
+@media screen and (min-width: 1213px) {
+  .nav-link-desktop {
+    display: inline;
   }
 }
