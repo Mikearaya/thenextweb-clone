@@ -550,6 +550,11 @@ li.bold-text {
     display: inline;
   }
 
+  section:not(.popular) {
+    margin: 1.5em auto 3em;
+    max-width: 1152px;
+  }
+
   div.sticky-nav img {
     width: 106px;
     object-fit: cover;
@@ -724,11 +729,6 @@ li.bold-text {
 
   .funding-links li:not(:last-child) {
     border-right: 1px solid #f42;
-  }
-
-  section:not(.popular) {
-    margin: 1.5em auto;
-    max-width: 1152px;
   }
 
   .popular article:first-of-type > a {
