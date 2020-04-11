@@ -436,6 +436,7 @@ footer div:last-child b {
 
 .latest-topics {
   display: flex;
+  justify-content: space-between;
   background: #fff4f2;
   color: #f42;
   padding: 0.1em;
