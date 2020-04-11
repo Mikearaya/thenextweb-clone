@@ -11,7 +11,7 @@ Clone of [https://thenextweb.com/ signup page](https://http://archive.vn/8p0Im) 
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/Mikearaya/thenextweb-clone/home-page/index.html)
+[Live Demo Link](https://mikearaya.github.io/thenextweb-clone)
 
 ## Getting Started
 
